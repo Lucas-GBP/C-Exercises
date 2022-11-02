@@ -5,5 +5,6 @@
 #include <stdlib.h>
 
 void create_file(void);
+void read_file(void);
 
 #endif

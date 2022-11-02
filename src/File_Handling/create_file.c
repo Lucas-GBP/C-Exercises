@@ -1,7 +1,14 @@
 #include "file_handling.h"
-#include <stdio.h>
-#include <stdlib.h>
+/*
+[An editor is available at the bottom of the page to write and execute the scripts.]
 
+1. Write a program in C to create and store information in a text file. Go to the editor
+Test Data :
+Input a sentence for the file : This is the content of the file test.txt.
+Expected Output :
+
+ The file test.txt created successfully...!! 
+ */
 #define MAX_LENGTH 1024
 
 void create_file(void){
@@ -24,7 +31,5 @@ void create_file(void){
     fgets(data, sizeof(data), stdin);
     fprintf(f_ptr, "%s", data);
     fclose(f_ptr);
-    printf("Done!\n");
-
-    exit(EXIT_SUCCESS);
+    printf("The file test.txt created successfully...!! \n");
 }

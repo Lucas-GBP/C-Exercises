@@ -10,4 +10,5 @@ void(*pointers[])(void) = {
 
 void(*files[])(void) = {
     create_file,    //1
+    read_file,      //2
 };
