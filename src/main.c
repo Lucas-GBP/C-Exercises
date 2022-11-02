@@ -3,7 +3,7 @@
 int main(){
     printf("Hello World!\n\n");
 
-    pointers[3]();
+    pointers[4]();
 
     printf("\nGoodBye World.\n");
     return 0;

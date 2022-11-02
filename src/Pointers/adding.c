@@ -18,5 +18,5 @@ void adding(void){
     printf("Input the second number : ");
     scanf("%d", &b);
 
-    printf("The sum of the entered numbers is : %i", (*(&a)+*(&b)));
+    printf("The sum of the entered numbers is : %i\n", (*(&a)+*(&b)));
 }

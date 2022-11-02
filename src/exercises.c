@@ -1,10 +1,9 @@
 #include "exercises.h"
-#include "Pointers/pointers.h"
 
 void(*pointers[])(void) = {
-    basic_declarition,
-    handle_in_program,
-    use_operators,
-    adding,
-    adding_by_reference
+    basic_declarition,  //1
+    handle_in_program,  //2
+    use_operators,      //3
+    adding,             //4
+    adding_by_reference,//5
 };

@@ -36,5 +36,5 @@ void basic_declarition(void){
         "&n stores the address of n = %p\n"
         "&o  stores the address of o = %p\n"
         "&z stores the address of z = %p\n", 
-    z, *z, &m, &n, &o, &z);
+    (void*)z, *z, (void*)&m, (void*)&n, (void*)&o, (void*)&z);
 }

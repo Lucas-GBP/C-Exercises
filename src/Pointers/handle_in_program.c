@@ -42,6 +42,6 @@ void print_var(int* var, const char* s){
     printf(
         "Address of %s : %p\n"
         "Value of %s : %d\n",
-        s, var, s, *var
+        s, (void*)var, s, *var
     );
 }

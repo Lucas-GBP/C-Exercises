@@ -76,9 +76,9 @@ void use_operators(void){
         "\n"
         ,
         m, fx, cht,
-        &m, &fx, &cht,
+        (void*)&m, (void*)&fx, (void*)&cht,
         *(&m), *(&fx), *(&cht),
-        m_ptr, fx_ptr, cht_ptr,
+        (void*)m_ptr, (void*)fx_ptr, (void*)cht_ptr,
         *m_ptr, *fx_ptr, *cht_ptr
     );
 }

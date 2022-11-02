@@ -1,7 +1,7 @@
 ##
 ## Variables
 ##
-CC = gcc
+CC = clang
 SRC_DIR = src
 BUILD_DIR = build
 WARNINGS =-Wall -Wextra -Wshadow -Wconversion
@@ -42,15 +42,19 @@ endif
 ##
 $(TARGET): $(O_FILES)
 	@$(MAKE_DIR) $(dir $@)
-	$(CC) $^ -o $(TARGET) $(C_FLAGS)
+	@echo "Compiling executable..."
+	@$(CC) $^ -o $(TARGET) $(C_FLAGS)
+	@echo "Done!"
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(MAKE_DIR) $(dir $@)
-	$(CC) $(C_FLAGS) -c -o $@ $<
+	@echo "Compiling... $<"
+	@$(CC) $(C_FLAGS) -c -o $@ $<
 
 build: $(TARGET)
 
 run:
+	clear
 	@./$(TARGET)
 
 clean:
