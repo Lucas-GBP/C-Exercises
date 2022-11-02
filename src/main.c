@@ -1,9 +1,10 @@
 #include "main.h"
+#include "exercises.h"
 
 int main(){
     printf("Hello World!\n\n");
 
-    pointers[4]();
+    files[0]();
 
     printf("\nGoodBye World.\n");
     return 0;

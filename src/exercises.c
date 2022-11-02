@@ -7,3 +7,7 @@ void(*pointers[])(void) = {
     adding,             //4
     adding_by_reference,//5
 };
+
+void(*files[])(void) = {
+    create_file,    //1
+};

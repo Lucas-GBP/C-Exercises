@@ -54,7 +54,6 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 build: $(TARGET)
 
 run:
-	clear
 	@./$(TARGET)
 
 clean:
