@@ -8,7 +8,7 @@ WARNINGS =-Wall -Wextra -Wshadow -Wconversion
 ifeq ($(CC), clang)
   WARNINGS := $(WARNINGS) -Wpedantic -Wno-unused-command-line-argument
 endif
-C_FLAGS = -O2 $(WARNINGS)
+C_FLAGS := -O2 $(WARNINGS)
 
 ##
 ## OS Variables
@@ -52,6 +52,9 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) $(C_FLAGS) -c -o $@ $<
 
 build: $(TARGET)
+
+debug: C_FLAGS += -g
+debug: $(TARGET)
 
 run:
 	@./$(TARGET)
