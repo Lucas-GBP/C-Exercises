@@ -1,7 +1,7 @@
 ##
 ## Variables
 ##
-CC = clang
+CC = gcc
 SRC_DIR = src
 BUILD_DIR = build
 WARNINGS =-Wall -Wextra -Wshadow -Wconversion

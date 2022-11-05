@@ -3,7 +3,7 @@
 int main(){
     printf("Hello World!\n\n");
 
-    pointers[4]();
+    search_sort[0]();
 
     printf("\nGoodBye World.\n");
     return 0;
