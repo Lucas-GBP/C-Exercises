@@ -25,24 +25,25 @@ void searching_binary(void){
     printf("Index: %d\tLast Index: %d\n", index, last_index);
 
     while (array[index] != target) {
-        unsigned next_index;
+        int index_change;
         if(last_index > index){
-            next_index = (last_index - index)/2+1;
+            index_change = (last_index - index)/2+1;
         } else {
-            next_index = (index - last_index)/2;
+            index_change = (index - last_index)/2;
         }
 
-        if(next_index == 0){
+        //Target not finded
+        if(index_change == 0){
             break;
         }
-        last_index = index;
 
+        last_index = index;
         if(array[index] > target){
-            index -= next_index;
+            index -= index_change;
         } else {
-            index += next_index;
+            index += index_change;
         }
-        
+
         printf("Index: %d\tLast Index: %d\n", index, last_index);
     }
 
