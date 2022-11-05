@@ -7,3 +7,7 @@ void(*pointers[])(void) = {
     adding,             //4
     adding_by_reference,//5
 };
+
+void(*search_sort[])(void) = {
+    searching_binary,   //1
+};
